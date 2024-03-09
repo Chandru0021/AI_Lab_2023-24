@@ -33,7 +33,8 @@ likes(john, X) :- eats(bill, X).
 ```
 
 ### Output:
-![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/ba89e2a5-479b-4b29-a677-7abdb3c79da6)
+![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/1277a537-1433-4179-92ab-54c657de39e0)
+
 ### Task 2:
 Consider the following facts and represent them in predicate form: <br>              
 1.	Steve likes easy courses. <br> 
