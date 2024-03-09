@@ -33,7 +33,7 @@ likes(john, X) :- eats(bill, X).
 ```
 
 ### Output:
-
+![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/ba89e2a5-479b-4b29-a677-7abdb3c79da6)
 ### Task 2:
 Consider the following facts and represent them in predicate form: <br>              
 1.	Steve likes easy courses. <br> 
@@ -46,7 +46,7 @@ Convert the facts in predicate form to clauses and then prove by resolution: “
 
 
 ### Output:
-![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/ba89e2a5-479b-4b29-a677-7abdb3c79da6)
+
 
 ### Task 3:
 Consider the statement <br> 
