@@ -14,20 +14,34 @@ To write a logic program to design a circuit like half adder and half subtractor
 8. Stop the program.
 
 ### Program:
+```
+% Define logic gates
+and_gate(1, 1, 1).
+and_gate(_, _, 0).
 
+or_gate(0, 0, 0).
+or_gate(_, _, 1).
 
+xor_gate(0, 0, 0).
+xor_gate(1, 0, 1).
+xor_gate(0, 1, 1).
+xor_gate(1, 1, 0).
 
+not_gate(0, 1).
+not_gate(1, 0).
 
+% Half Adder
+half_adder(A, B, Sum, Carry) :-
+    xor_gate(A, B, Sum),
+    and_gate(A, B, Carry).
 
-
-
-
-
-
-
+% Half Subtractor
+half_subtractor(A, B, Difference, Borrow) :-
+    xor_gate(A, B, Difference),
+    not_gate(B, B_not),
+    and_gate(A, B_not, Borrow).
+```
 ### Output:
-
-
-
+![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/d4419a13-4c2c-4647-b103-ab26b8bb2c92)
 ### Result:
 Thus the truth table of circuit verified sucessfully.
