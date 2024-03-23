@@ -14,12 +14,19 @@ To  write  a logic program  to solve Towers of Hanoi problem  using SWI-PROLOG.
 8. Run the program  to find answer of  query.
 
 ### Program:
+```
+% Define the predicate hanoi/3 to solve the Towers of Hanoi problem
+hanoi(1, X, Y) :-
+    write('Move disk from '), write(X), write(' to '), write(Y), nl.
 
-
-
+hanoi(N, X, Y) :-
+    N > 1,
+    M is N - 1,
+    hanoi(M, X, Z),
+    hanoi(1, X, Y),
+    hanoi(M, Z, Y).
+```
 ### Output:
-
-
-
+![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/7a49caee-635b-4ae8-94f5-0a1ea25b4df3)
 ### Result:
 Thus the solution of Towers of Hanoi problem was found by logic programming.
