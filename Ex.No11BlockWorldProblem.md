@@ -46,7 +46,7 @@ domain.pddl
 :effect (and (holding ?ob) (clear ?underob)
 (not (on ?ob ?underob)) (not (clear ?ob)) (not (arm-empty)))))
 ```
-### Input 
+### Input1: 
 ```
 (define (problem pb1)
 (:domain blocksworld)
@@ -54,7 +54,19 @@ domain.pddl
 (:init (on-table a) (on-table b) (clear a) (clear b) (arm-empty))
 (:goal (and (on a b))))
 ```
-### Output/Plan:
+### Output/Plan1:
 ![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/9d82e8eb-9367-4289-b73d-b8e4974e4d43)
+
+### Input2:
+```
+(define (problem pb1)
+   (:domain blocksworld)
+   (:objects a b)
+   (:init (on-table a) (on b a)  (clear a)  (clear b) (arm-empty))
+   (:goal (and (on-table a)(on-table a)(clear a)(clear b)(arm-empty))))
+```
+###Output/Plan2:
+![image](https://github.com/Chandru0021/AI_Lab_2023-24/assets/131637082/d5e4511b-18bc-49da-872f-b81275a2f385)
+
 ### Result:
 Thus the plan was found for the initial and goal state of block world problem.
